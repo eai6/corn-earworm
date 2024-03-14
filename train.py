@@ -6,6 +6,8 @@ def main(model_size, data, epochs, device, save):
     # Load a model
     model = YOLO(f'yolov8{model_size}.pt')  # load a pretrained model 
 
+    model = YOLO('/Users/edwardamoah/Documents/GitHub/corn-earworm/output/models/best.pt')  # load a custom model
+
     # Train the model on Apple M1 Computer
     results = model.train(data=data, epochs=epochs, save=save)
 
