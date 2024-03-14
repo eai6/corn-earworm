@@ -13,7 +13,7 @@ def main(model_size, data, epochs, device, save):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train YOLOv8 model")
     parser.add_argument("--model_size", type=str, default="m", help="Size of model to train")
-    parser.add_argument("--data", type=str, default="/Users/edwardamoah/Documents/GitHub/corn-earworm/Corn-Earworn-Class-Project-1/data.yaml", help="Path to dataset yaml file")
+    parser.add_argument("--data", type=str, default="/Users/edwardamoah/Documents/GitHub/corn-earworm/Corn-Earworm-Class-Project-2/data.yaml", help="Path to dataset yaml file")
     parser.add_argument("--epochs", type=int, default=10, help="Number of epochs to train for")
     parser.add_argument("--device", type=str, default="mps", help="Device to train on")
     parser.add_argument("--save", type=bool, default=True, help="Save model")
